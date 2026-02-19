@@ -14,18 +14,14 @@ const LINKS = {
 
 const SOCIALS = ['𝕏', 'in', 'gh']
 
-/**
- * Footer — dark themed footer with navigation links and socials.
- */
+
 export default function Footer() {
   return (
     <footer className="bg-slate-950 text-slate-400 mt-20">
       <div className="max-w-6xl mx-auto px-4 py-16">
 
-        {/* Grid */}
         <div className="grid grid-cols-1 md:grid-cols-4 gap-10 mb-12">
 
-          {/* Brand */}
           <div className="md:col-span-2">
             <Link
               to="/"
@@ -73,12 +69,6 @@ export default function Footer() {
             </div>
           ))}
         </div>
-
-        {/* Bottom bar */}
-        <div className="border-t border-slate-800 pt-8 flex flex-col sm:flex-row justify-between items-center gap-4">
-          <p className="text-xs text-slate-600 font-sans">
-            © 2026 Inkwell. Built with React + Tailwind CSS.
-          </p>
           <div className="flex gap-5">
             {['Privacy', 'Terms'].map((t) => (
               <button key={t} className="text-xs text-slate-600 hover:text-slate-400 transition-colors font-sans">
@@ -86,7 +76,6 @@ export default function Footer() {
               </button>
             ))}
           </div>
-        </div>
       </div>
     </footer>
   )
